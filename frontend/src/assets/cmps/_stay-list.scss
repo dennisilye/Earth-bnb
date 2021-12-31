@@ -1,0 +1,138 @@
+.stay-list {
+    display: -webkit-flex;
+    display: flex;
+    grid-gap: 17px;
+    gap: 17px;
+    margin-top: 20px;
+    margin-bottom: 75px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.stay-preview-container {
+    flex-basis: 23%;
+    div {
+        // margin-bottom: -8px;
+    }
+    height: 150%;
+}
+
+.listImg {
+    border-radius: 13px;
+    object-fit: cover;
+    // height: 157px;
+    height: 200px;
+}
+
+ul.stay-list {
+    padding-inline-start: 0px;
+}
+
+.list-rating {
+    font-size: 0.9rem;
+    span {
+        color: #717171;
+    }
+    text-align: start;
+}
+
+.fa-star {
+    color: rgb(255, 56, 92);
+}
+
+.prevDiv {
+    text-align: start;
+    line-height: 1.5;
+    .preview-stay-bold {
+        font-family: cereal-Bold;
+        color: black;
+    }
+}
+
+.list-rating {
+    svg {
+        margin-inline-end: 5px;
+    }
+}
+
+.el-carousel__container {
+    cursor: pointer;
+    margin-bottom: 6px;
+    @include for-narrow-layout {
+        height: 17.1875rem; //275px
+        width: 17.1875rem;
+    }
+    // img {
+    //   object-fit: cover;
+    // }
+}
+
+.el-carousel-img {
+    // margin-bottom: 6px;
+    border-radius: 13px;
+    button {
+        width: 25px;
+        height: 25px;
+        border-radius: 50%;
+    }
+}
+
+.el-carousel__arrow {
+    background-color: rgba(233, 233, 233, 0.8);
+    color: $clr05;
+}
+
+.el-carousel-img .el-carousel__arrow:hover {
+    background-color: rgba(255, 255, 255, 0.95);
+}
+
+.el-carousel__indicator {
+    button {
+        width: 7px;
+        height: 7px;
+        border-radius: 50%;
+        padding: 0;
+    }
+    &:hover {
+        button {
+            transition: 70ms;
+            transform: scale(1.5);
+        }
+    }
+}
+
+.stay-preview-details-container {
+    cursor: pointer;
+}
+
+.heart-preview-container {
+    position: absolute;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-justify-content: flex-end;
+    justify-content: flex-end;
+    width: 95%;
+    top: 10px;
+    z-index: 3;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+}
+
+.likeBtn {
+    color: rgba(0, 0, 0, 0.5);
+    //text-shadow: -1px 0 #000, 0 1px #000, 1px 0 #000, 0 -1px #000;
+    // content: "\f004";
+    font-size: 20px;
+}
+
+.fa-heart path {
+    stroke: white;
+    stroke-width: 25px;
+}
+
+.liked {
+    color: $clr1;
+}
